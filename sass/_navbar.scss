@@ -1,99 +1,86 @@
+.navbar {
+  background: #fff url(/img/menubg.png) bottom left repeat-x;
+  margin-top: 28px;
+  margin-bottom: 20px;
+  border: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  padding: 0;
 
-
-.headersav {
-    background-color: $ES_voros;
-    color: white;
-  }
-  
-  .nav{
-      background: #fff url(img/menubg.png) bottom left repeat-x;
-  }
-  .navbar {
-    background: #fff url(img/menubg.png) bottom left repeat-x;
-    margin-top: 28px;
-    margin-bottom: 20px;
-    border: 0;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    padding: 0;
-  }
-   
-  .navbar-nav {
-    text-align: center;
-    font-size: 1rem;
-    color: #666;
-    text-transform: uppercase;
-  }
-  .navbar .navbar-brand {
-    background: url(img/eshu.png) left center no-repeat;
+  .navbar-brand {
+    background: url(/img/eshu.png) left center no-repeat;
     width: 167px;
     height: 90px;
     text-indent: -99999px;
   }
-  
-  .navbar-nav div a i {
-    line-height: 45px;
-    color: #aaa;
-  }
-  .navbar-nav div {
-    padding: 15px 20px;
-    padding-bottom: 0;
-    color: white;
+
+  ul.navbar-nav {
     text-align: center;
+    font-size: 1rem;
+    color: #666;
+    text-transform: uppercase;
+    div a i {
+      line-height: 45px;
+      color: #aaa;
+    }
+
+    div {
+      padding: 15px 20px;
+      padding-bottom: 0;
+      color: white;
+      text-align: center;
+    }
+
+    div:hover,
+    div:focus {
+      background: $ES_voros;
+      border-color: $ES_voros;
+      color: #fff;
+      outline: 0;
+    }
+    div a {
+      color: #fff;
+      font-size: 14px;
+    }
   }
-  ul.navbar-nav div:hover,
-  ul.navbar-nav div:focus {
-    background: $ES_voros;
-    border-color: $ES_voros;
-    color: #fff;
-    outline: 0;
+}
+
+@media (max-width: 992px) {
+  ul.navbar-nav div a i {
+    display: none;
   }
-  
   ul.navbar-nav div a {
-    color: #fff;
-    font-size: 14px;
+    color: #5d5d5d;
   }
-  @media (max-width: 992px) {
-    ul.navbar-nav div a i {
-      display: none;
-    }
-    ul.navbar-nav div a {
-      color: #5d5d5d;
-    }
-  }
-  body {
-    font-family: "Open Sans", sans-serif;
-    background-color: #f5f5f5;
-  }
-  .carousel-item a {
-    padding: 0.5rem;
-  }
-  
-  footer {
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    background-color: $ES_voros;
-    color: white;
-    height: 50px;
-    text-align: center;
-  }
-  
-  footer a {
-    text-align: center;
-    padding: 0 3px;
-    color: inherit;
-  }
-  footer a:hover {
-    color: inherit;
-  }
-  footer a .fa-facebook-square {
-    text-align: center;
-    padding: 0 3px;
-    color: inherit;
-  }
-  
-  .section {
-    margin: 30px 0 auto;
-  }
+}
+
+
+
+footer {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: $ES_voros;
+  color: white;
+  height: 50px;
+  text-align: center;
+}
+
+footer a {
+  text-align: center;
+  padding: 0 3px;
+  color: inherit;
+}
+footer a:hover {
+  color: inherit;
+}
+footer a .fa-facebook-square {
+  text-align: center;
+  padding: 0 3px;
+  color: inherit;
+}
+
+.section {
+  margin: 30px 0 auto;
+}
